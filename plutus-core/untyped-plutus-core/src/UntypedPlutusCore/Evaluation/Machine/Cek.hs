@@ -18,7 +18,7 @@
 {-# LANGUAGE TypeOperators         #-}
 {-# LANGUAGE UndecidableInstances  #-}
 
-module Language.UntypedPlutusCore.Evaluation.Machine.Cek
+module UntypedPlutusCore.Evaluation.Machine.Cek
     ( CekValue(..)
     , CekUserError(..)
     , CekEvaluationException
@@ -44,19 +44,19 @@ where
 import           ErrorCode
 import           PlutusPrelude
 
-import           Language.UntypedPlutusCore.Core
-import           Language.UntypedPlutusCore.Subst
+import           UntypedPlutusCore.Core
+import           UntypedPlutusCore.Subst
 
-import           Language.PlutusCore.Constant
-import           Language.PlutusCore.Evaluation.Machine.ExBudgeting
-import           Language.PlutusCore.Evaluation.Machine.ExMemory
-import           Language.PlutusCore.Evaluation.Machine.Exception
-import           Language.PlutusCore.Evaluation.Result
-import           Language.PlutusCore.Name
-import           Language.PlutusCore.Pretty
-import           Language.PlutusCore.Universe
+import           PlutusCore.Constant
+import           PlutusCore.Evaluation.Machine.ExBudgeting
+import           PlutusCore.Evaluation.Machine.ExMemory
+import           PlutusCore.Evaluation.Machine.Exception
+import           PlutusCore.Evaluation.Result
+import           PlutusCore.Name
+import           PlutusCore.Pretty
+import           PlutusCore.Universe
 
-import           Control.Lens                                       (AReview)
+import           Control.Lens                              (AReview)
 import           Control.Lens.Operators
 import           Control.Lens.Setter
 import           Control.Monad.Except
@@ -65,8 +65,8 @@ import           Control.Monad.Reader
 import           Control.Monad.ST
 import           Control.Monad.State.Strict
 import           Data.Array
-import           Data.DList                                         (DList)
-import qualified Data.DList                                         as DList
+import           Data.DList                                (DList)
+import qualified Data.DList                                as DList
 import           Data.HashMap.Monoidal
 import           Data.STRef
 import           Data.Text.Prettyprint.Doc

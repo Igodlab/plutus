@@ -12,10 +12,10 @@ module Language.PlutusTx.Code where
 
 import           Language.PlutusTx.Lift.Instances ()
 
-import qualified Language.PlutusIR                as PIR
+import qualified PlutusIR                         as PIR
 
-import qualified Language.PlutusCore              as PLC
-import qualified Language.UntypedPlutusCore       as UPLC
+import qualified PlutusCore                       as PLC
+import qualified UntypedPlutusCore                as UPLC
 
 import           Control.Exception
 import           Flat                             (Flat, unflat)

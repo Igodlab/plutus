@@ -61,35 +61,35 @@ module Plutus.V1.Ledger.Api (
 
 import           Control.Monad.Except
 import           Control.Monad.Writer
-import           Data.Aeson                                         (Result (..), fromJSON, toJSON)
+import           Data.Aeson                                (Result (..), fromJSON, toJSON)
 import           Data.Bifunctor
 import           Data.ByteString.Short
 import           Data.Either
 import           Data.Map
-import qualified Data.Text                                          as Text
+import qualified Data.Text                                 as Text
 import           Data.Text.Prettyprint.Doc
 import           Data.Tuple
 import qualified Flat
-import qualified Language.PlutusCore                                as PLC
-import qualified Language.PlutusCore.Constant                       as PLC
-import qualified Language.PlutusCore.DeBruijn                       as PLC
-import           Language.PlutusCore.Evaluation.Machine.ExBudgeting (CostModel, ExBudget (..))
-import qualified Language.PlutusCore.Evaluation.Machine.ExBudgeting as PLC
-import           Language.PlutusCore.Evaluation.Machine.ExMemory    (ExCPU (..), ExMemory (..))
-import qualified Language.PlutusCore.MkPlc                          as PLC
-import           Language.PlutusCore.Pretty
-import           Language.PlutusTx                                  (Data (..), IsData (..))
-import qualified Language.PlutusTx.Lift                             as PlutusTx
-import qualified Language.UntypedPlutusCore                         as UPLC
-import qualified Language.UntypedPlutusCore.Evaluation.Machine.Cek  as UPLC
+import           Language.PlutusTx                         (Data (..), IsData (..))
+import qualified Language.PlutusTx.Lift                    as PlutusTx
 import           Plutus.V1.Ledger.Address
 import           Plutus.V1.Ledger.Bytes
 import           Plutus.V1.Ledger.Contexts
 import           Plutus.V1.Ledger.Crypto
 import           Plutus.V1.Ledger.Interval
-import           Plutus.V1.Ledger.Scripts                           hiding (Script)
-import qualified Plutus.V1.Ledger.Scripts                           as Scripts
+import           Plutus.V1.Ledger.Scripts                  hiding (Script)
+import qualified Plutus.V1.Ledger.Scripts                  as Scripts
 import           Plutus.V1.Ledger.Slot
+import qualified PlutusCore                                as PLC
+import qualified PlutusCore.Constant                       as PLC
+import qualified PlutusCore.DeBruijn                       as PLC
+import           PlutusCore.Evaluation.Machine.ExBudgeting (CostModel, ExBudget (..))
+import qualified PlutusCore.Evaluation.Machine.ExBudgeting as PLC
+import           PlutusCore.Evaluation.Machine.ExMemory    (ExCPU (..), ExMemory (..))
+import qualified PlutusCore.MkPlc                          as PLC
+import           PlutusCore.Pretty
+import qualified UntypedPlutusCore                         as UPLC
+import qualified UntypedPlutusCore.Evaluation.Machine.Cek  as UPLC
 
 {- Note [Abstract types in the ledger API]
 We need to support old versions of the ledger API as we update the code that it depends on. You

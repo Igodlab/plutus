@@ -6,8 +6,8 @@
 {-# LANGUAGE TemplateHaskell     #-}
 module PlutusTx where
 
-import qualified Language.PlutusCore.Builtins as PLC
-import qualified Language.PlutusCore.Universe as PLC
+import qualified PlutusCore.Builtins        as PLC
+import qualified PlutusCore.Universe        as PLC
 -- Main Plutus Tx module.
 import           Language.PlutusTx
 -- Additional support for lifting.
@@ -22,8 +22,8 @@ import           Language.PlutusTx.Prelude
 -- $setup
 -- >>> import Tutorial.PlutusTx
 -- >>> import Language.PlutusTx
--- >>> import Language.PlutusCore
--- >>> import Language.PlutusCore.Evaluation.Machine.Ck
+-- >>> import PlutusCore
+-- >>> import PlutusCore.Evaluation.Machine.Ck
 -- >>> import Data.Text.Prettyprint.Doc
 
 -- BLOCK2

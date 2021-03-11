@@ -14,14 +14,14 @@
 
 module Plutus.Benchmark.LastPiece where
 
-import           Data.Char                    (isSpace)
-import           Language.PlutusCore.Builtins
-import qualified Language.PlutusCore.Pretty   as PLC
-import           Language.PlutusCore.Universe
-import           Language.PlutusTx            as PlutusTx
-import           Language.PlutusTx.Builtins   as Tx
-import           Language.PlutusTx.Prelude    as PLC hiding (Semigroup (..), check, foldMap, showList)
-import           Language.UntypedPlutusCore
+import           Data.Char                  (isSpace)
+import           Language.PlutusTx          as PlutusTx
+import           Language.PlutusTx.Builtins as Tx
+import           Language.PlutusTx.Prelude  as PLC hiding (Semigroup (..), check, foldMap, showList)
+import           PlutusCore.Builtins
+import qualified PlutusCore.Pretty          as PLC
+import           PlutusCore.Universe
+import           UntypedPlutusCore
 
 -------------------------------------
 --      Pieces

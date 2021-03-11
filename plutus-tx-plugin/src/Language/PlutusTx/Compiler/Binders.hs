@@ -10,7 +10,7 @@ import           Language.PlutusTx.PIRTypes
 
 import qualified GhcPlugins                       as GHC
 
-import qualified Language.PlutusIR                as PIR
+import qualified PlutusIR                         as PIR
 
 import           Control.Monad.Reader
 

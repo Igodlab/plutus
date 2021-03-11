@@ -12,11 +12,11 @@ import                          Language.PlutusTx.PLCTypes
 
 import                qualified GhcPlugins                       as GHC
 
-import                qualified Language.PlutusCore              as PLC
-import                qualified Language.PlutusCore.MkPlc        as PLC
-import                          Language.PlutusCore.Quote
+import                qualified PlutusCore                       as PLC
+import                qualified PlutusCore.MkPlc                 as PLC
+import                          PlutusCore.Quote
 
-import                          Language.PlutusIR.Compiler.Names
+import                          PlutusIR.Compiler.Names
 
 import                          Data.Char
 import                          Data.List

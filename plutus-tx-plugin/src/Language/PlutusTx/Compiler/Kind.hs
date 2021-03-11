@@ -11,7 +11,7 @@ import           Language.PlutusTx.Compiler.Utils
 
 import qualified GhcPlugins                       as GHC
 
-import qualified Language.PlutusCore              as PLC
+import qualified PlutusCore                       as PLC
 
 compileKind :: Compiling uni fun m => GHC.Kind -> m (PLC.Kind ())
 compileKind k = withContextM 2 (sdToTxt $ "Compiling kind:" GHC.<+> GHC.ppr k) $ case k of

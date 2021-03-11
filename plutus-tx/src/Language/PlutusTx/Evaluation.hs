@@ -17,15 +17,15 @@ where
 
 import           PlutusPrelude
 
-import           Language.PlutusCore.Builtins
-import           Language.PlutusCore.Evaluation.Machine.ExBudgeting
-import           Language.PlutusCore.Evaluation.Machine.ExMemory
-import           Language.PlutusCore.Name
-import           Language.PlutusCore.Universe
+import           PlutusCore.Builtins
+import           PlutusCore.Evaluation.Machine.ExBudgeting
+import           PlutusCore.Evaluation.Machine.ExMemory
+import           PlutusCore.Name
+import           PlutusCore.Universe
 
-import           Language.UntypedPlutusCore
-import           Language.UntypedPlutusCore.Evaluation.Machine.Cek  hiding (evaluateCek, unsafeEvaluateCek)
-import qualified Language.UntypedPlutusCore.Evaluation.Machine.Cek  as UPLC
+import           UntypedPlutusCore
+import           UntypedPlutusCore.Evaluation.Machine.Cek  hiding (evaluateCek, unsafeEvaluateCek)
+import qualified UntypedPlutusCore.Evaluation.Machine.Cek  as UPLC
 
 -- | Evaluate a program in the CEK machine with the usual string dynamic builtins.
 evaluateCek

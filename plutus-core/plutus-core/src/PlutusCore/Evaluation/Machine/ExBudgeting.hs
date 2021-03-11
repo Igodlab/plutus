@@ -81,7 +81,7 @@ possible to adjust them at runtime.
 
 -}
 
-module Language.PlutusCore.Evaluation.Machine.ExBudgeting
+module PlutusCore.Evaluation.Machine.ExBudgeting
     ( ExBudgetMode(..)
     , ExBudget(..)
     , ExBudgetState(..)
@@ -117,24 +117,24 @@ module Language.PlutusCore.Evaluation.Machine.ExBudgeting
 where
 
 
-import           Language.PlutusCore.Core
-import           Language.PlutusCore.Name
-import           PlutusPrelude                                   hiding (toList)
+import           PlutusCore.Core
+import           PlutusCore.Name
+import           PlutusPrelude                          hiding (toList)
 
 import           Barbies
 import           Control.Lens.Indexed
-import           Control.Lens.TH                                 (makeLenses)
+import           Control.Lens.TH                        (makeLenses)
 import           Data.Default.Class
 import           Data.HashMap.Monoidal
 import           Data.Hashable
-import qualified Data.Kind                                       as Kind
-import           Data.List                                       (intersperse)
-import qualified Data.Map                                        as Map
+import qualified Data.Kind                              as Kind
+import           Data.List                              (intersperse)
+import qualified Data.Map                               as Map
 import           Data.Semigroup.Generic
 import           Data.Text.Prettyprint.Doc
 import           Deriving.Aeson
-import           Language.Haskell.TH.Syntax                      hiding (Name)
-import           Language.PlutusCore.Evaluation.Machine.ExMemory
+import           Language.Haskell.TH.Syntax             hiding (Name)
+import           PlutusCore.Evaluation.Machine.ExMemory
 
 newtype ExRestrictingBudget = ExRestrictingBudget ExBudget deriving (Show, Eq)
     deriving (Semigroup, Monoid) via (GenericSemigroupMonoid ExBudget)

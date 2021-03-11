@@ -25,22 +25,22 @@ import           Language.PlutusTx.Compiler.Types
 import           Language.PlutusTx.Compiler.Utils
 import           Language.PlutusTx.PIRTypes
 
-import qualified FamInstEnv                             as GHC
-import qualified GhcPlugins                             as GHC
-import qualified TysPrim                                as GHC
+import qualified FamInstEnv                          as GHC
+import qualified GhcPlugins                          as GHC
+import qualified TysPrim                             as GHC
 
-import qualified Language.PlutusIR                      as PIR
-import qualified Language.PlutusIR.Compiler.Definitions as PIR
-import qualified Language.PlutusIR.MkPir                as PIR
+import qualified PlutusIR                            as PIR
+import qualified PlutusIR.Compiler.Definitions       as PIR
+import qualified PlutusIR.MkPir                      as PIR
 
-import qualified Language.PlutusCore.Name               as PLC
+import qualified PlutusCore.Name                     as PLC
 
 import           Control.Monad.Extra
 import           Control.Monad.Reader
 
-import           Data.List                              (sortBy)
-import qualified Data.List.NonEmpty                     as NE
-import qualified Data.Set                               as Set
+import           Data.List                           (sortBy)
+import qualified Data.List.NonEmpty                  as NE
+import qualified Data.Set                            as Set
 import           Data.Traversable
 
 -- Types

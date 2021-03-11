@@ -21,34 +21,34 @@ import           Language.PlutusTx.Compiler.Types
 import           Language.PlutusTx.Compiler.Utils
 import           Language.PlutusTx.PIRTypes
 
-import qualified Language.PlutusTx.Builtins             as Builtins
+import qualified Language.PlutusTx.Builtins            as Builtins
 -- I feel like we shouldn't need this, we only need it to spot the special String type, which is annoying
-import qualified Language.PlutusTx.String               as String
+import qualified Language.PlutusTx.String              as String
 
-import qualified Class                                  as GHC
-import qualified FV                                     as GHC
-import qualified GhcPlugins                             as GHC
-import qualified MkId                                   as GHC
-import qualified PrelNames                              as GHC
+import qualified Class                                 as GHC
+import qualified FV                                    as GHC
+import qualified GhcPlugins                            as GHC
+import qualified MkId                                  as GHC
+import qualified PrelNames                             as GHC
 
-import qualified Language.PlutusIR                      as PIR
-import qualified Language.PlutusIR.Compiler.Definitions as PIR
-import           Language.PlutusIR.Compiler.Names
-import qualified Language.PlutusIR.MkPir                as PIR
-import qualified Language.PlutusIR.Purity               as PIR
+import qualified PlutusIR                              as PIR
+import qualified PlutusIR.Compiler.Definitions         as PIR
+import           PlutusIR.Compiler.Names
+import qualified PlutusIR.MkPir                        as PIR
+import qualified PlutusIR.Purity                       as PIR
 
-import qualified Language.PlutusCore                    as PLC
-import qualified Language.PlutusCore.MkPlc              as PLC
+import qualified PlutusCore                            as PLC
+import qualified PlutusCore.MkPlc                      as PLC
 
 import           Control.Monad.Reader
 
-import qualified Data.ByteString                        as BS
-import           Data.List                              (elemIndex)
-import qualified Data.List.NonEmpty                     as NE
-import qualified Data.Map                               as Map
-import qualified Data.Set                               as Set
-import qualified Data.Text                              as T
-import qualified Data.Text.Encoding                     as TE
+import qualified Data.ByteString                       as BS
+import           Data.List                             (elemIndex)
+import qualified Data.List.NonEmpty                    as NE
+import qualified Data.Map                              as Map
+import qualified Data.Set                              as Set
+import qualified Data.Text                             as T
+import qualified Data.Text.Encoding                    as TE
 import           Data.Traversable
 
 {- Note [System FC and System FW]

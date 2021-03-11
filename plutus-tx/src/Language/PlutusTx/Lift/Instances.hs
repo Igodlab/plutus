@@ -11,13 +11,13 @@
 {-# OPTIONS_GHC -Wno-orphans #-}
 module Language.PlutusTx.Lift.Instances () where
 
-import qualified Language.PlutusCore          as PLC
+import qualified PlutusCore                   as PLC
 
 import           Language.PlutusTx.Builtins
 import           Language.PlutusTx.Lift.Class
 
-import           Language.PlutusIR
-import           Language.PlutusIR.MkPir
+import           PlutusIR
+import           PlutusIR.MkPir
 
 import qualified Data.ByteString              as BS
 import           Data.Proxy

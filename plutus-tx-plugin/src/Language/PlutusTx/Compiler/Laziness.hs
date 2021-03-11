@@ -10,9 +10,9 @@ import {-# SOURCE #-}           Language.PlutusTx.Compiler.Type
 import                          Language.PlutusTx.Compiler.Types
 import                          Language.PlutusTx.PIRTypes
 
-import                qualified Language.PlutusIR                as PIR
+import                qualified PlutusIR                         as PIR
 
-import                          Language.PlutusCore.Quote
+import                          PlutusCore.Quote
 
 import                qualified GhcPlugins                       as GHC
 

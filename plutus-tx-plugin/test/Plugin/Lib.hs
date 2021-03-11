@@ -19,9 +19,9 @@ import           Language.PlutusTx.Evaluation
 import           Language.PlutusTx.Prelude
 import           Language.PlutusTx.TH
 
-import           Language.PlutusCore.Pretty   (PrettyConst)
-import qualified Language.PlutusCore.Universe as PLC
-import qualified Language.UntypedPlutusCore   as UPLC
+import           PlutusCore.Pretty            (PrettyConst)
+import qualified PlutusCore.Universe          as PLC
+import qualified UntypedPlutusCore            as UPLC
 
 import           Codec.Serialise              (Serialise)
 import           Data.Text.Prettyprint.Doc

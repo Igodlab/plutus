@@ -31,12 +31,12 @@ import qualified Ledger.Typed.Scripts                                  as Script
 import           Wallet
 import           Wallet.Emulator.Types                                 (Wallet (..), walletPubKey)
 
-import qualified Language.PlutusCore                                   as PLC
-import qualified Language.PlutusCore.Evaluation.Result                 as PLC
 import qualified Language.PlutusTx                                     as PlutusTx
 import           Language.PlutusTx.Evaluation                          (unsafeEvaluateCek)
 import qualified Language.PlutusTx.Prelude                             as PlutusTx
-import qualified Language.UntypedPlutusCore                            as UPLC
+import qualified PlutusCore                                            as PLC
+import qualified PlutusCore.Evaluation.Result                          as PLC
+import qualified UntypedPlutusCore                                     as UPLC
 
 import           Opt
 import qualified Recursion                                             as Rec
