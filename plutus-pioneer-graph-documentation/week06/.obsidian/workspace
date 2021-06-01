@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0c04fea8670b09a7",
+        "id": "16a568429d363447",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pp00-l06-Core-1a.md",
-            "mode": "source"
+            "file": "pp00-l06-Core-1.md",
+            "mode": "preview"
           }
         }
       }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 161
   },
   "right": {
     "id": "ace2404308c4aa14",
@@ -68,14 +68,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pp00-l06-Core-1a.md",
+                "file": "pp00-l06-Core-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -83,13 +83,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 205
   },
-  "active": "0c04fea8670b09a7",
+  "active": "16a568429d363447",
   "lastOpenFiles": [
+    "pp00-l06-Core-1.md",
+    "Untitled.md",
+    "pp00-l06-Core-1d.md",
+    "Ledger.Tx-txOutDatum.md",
+    "Ledger.Value-AssetClass.md",
+    "pp00-l06-Core-1c.md",
+    "pp00-l06.md",
     "pp00-l06-Core-1a.md",
-    "pp0-l06-Core-1.md",
-    "pp0-l06.md"
+    "pp00-l06-Core-1b.md",
+    "pp0-l06-Core-1a.md"
   ]
 }
