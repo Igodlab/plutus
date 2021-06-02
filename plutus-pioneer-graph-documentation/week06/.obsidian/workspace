@@ -4,13 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "16a568429d363447",
+        "id": "e31dccc813be4d44",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "pp00-l06-Swap-1.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "3a871c648c1289cd",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "pp00-l06-Core-1.md",
             "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "744b134d37f94e7a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Templates/contract-1.md",
+            "mode": "source"
           }
         }
       }
@@ -52,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 161
+    "width": 184
   },
   "right": {
     "id": "ace2404308c4aa14",
@@ -83,19 +107,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205
+    "width": 205,
+    "collapsed": true
   },
-  "active": "16a568429d363447",
+  "active": "3a871c648c1289cd",
   "lastOpenFiles": [
     "pp00-l06-Core-1.md",
-    "Untitled.md",
-    "pp00-l06-Core-1d.md",
-    "Ledger.Tx-txOutDatum.md",
-    "Ledger.Value-AssetClass.md",
-    "pp00-l06-Core-1c.md",
+    "Templates/contract-1.md",
+    "pp00-l06-Swap-1b1.md",
+    "pp00-l06-Swap-1.md",
+    "pp00-l06-Swap-1b.md",
+    "pp00-l06-PAB-1.md",
+    "PAB.md",
     "pp00-l06.md",
-    "pp00-l06-Core-1a.md",
-    "pp00-l06-Core-1b.md",
-    "pp0-l06-Core-1a.md"
+    "Untitled.md",
+    "Templates/Untitled.md"
   ]
 }

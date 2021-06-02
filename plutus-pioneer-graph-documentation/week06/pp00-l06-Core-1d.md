@@ -1,4 +1,5 @@
 #### id [[pp00-l06-Core-1d]]
+---
 
 Get data from datum. A more general case is to consider that Datum can be empty. Here, two intermediary steps were taken [[pp00-l06-Core-1d1]]
 
@@ -12,6 +13,6 @@ oracleValue o f = do
 ```
 
 ---
-#### sub [[pp00-l06-Core-1]]
+#### in [[pp00-l06-Core-1]]
 
-
+#plutus-pioneer #lecture06 #core 

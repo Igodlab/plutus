@@ -1,13 +1,11 @@
-## Contract: [Core.hs](https://github.com/input-output-hk/plutus-pioneer-program/blob/main/code/week06/src/Week06/Oracle/Core.hs)
-
-#### tag: [[pp00-l06-Core-1]]
-
----
-This is the Plutus Pioneer first ever course. Thaught by Dr. Lars Brünjes. Find it on [Youtube](https://www.youtube.com/watch?v=wY7R-PJn66g&t=4865s) and [Github](https://github.com/input-output-hk/plutus-pioneer-program).
----
+#### id: [[pp00-l06-Core-1]]
+## Contract: [`Core.hs`](https://github.com/input-output-hk/plutus-pioneer-program/blob/main/code/week06/src/Week06/Oracle/Core.hs)
 
 ---
-** Note **
+This is the Plutus Pioneer first ever course. Thaught by [Dr. Lars Brünjes](https://github.com/brunjlar). Find this lecture on [Youtube](https://www.youtube.com/watch?v=wY7R-PJn66g&t=4865s) and [Github](https://github.com/input-output-hk/plutus-pioneer-program/tree/main/code/week06).
+---
+
+---
 This is the first contract of Lecture 6. Refer to [[pp00-l06]]
 ---
 
@@ -23,11 +21,18 @@ This is the first contract of Lecture 6. Refer to [[pp00-l06]]
     - Boiler-plate for on-chain [[pp0-l06-Core-1f]]:
 		- Template Haskell `oracleInst`
 		- Construct Ledger-Adress `oracleAddress`
-
+        
 - OFF-CHAIN part
-The  main prupose is to start the Oracle and update it
-	- custom data-type for `OracleParams` [[pp00-l06-Core-1g]]
-	
+    - custom data-type for `OracleParams` [[pp00-l06-Core-1g]]
+    - Start Oracle [[pp00-l06-Core-1h]], for this we need to:
+        - Mint the unique NFT
+        - Create oracle data to comunicate it to the on-chain world
+    - Update the oracle's datum with new current information `updateOracle`, this handles two cases [[pp00-l06-Core-1i]]
+        - Simply update an existing oracle or
+        - Create a brand new oracle 
+    - Run the oracle `runOracle`[[pp00-l06-Core-1j]]
+
+
 ## Full contract
 
 ```haskell
@@ -232,3 +237,8 @@ runOracle op = do
         updateOracle oracle x
         go oracle
 ```
+---
+2021-05-26 09:39
+#### in [[pp00-l06]]
+
+#plutus-pioneer #core #lecture06 

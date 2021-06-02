@@ -1,4 +1,6 @@
-### idpp00-l06-Core-1a
+#### id [[pp00-l06-Core-1a]]
+--- 
+
 Create custom data-type `Oracle` & make it liftable. Also create custom `OracleRedeemer` to be able to tell a Tx whether to consume or update its **Datum**
 
 ```haskell
@@ -16,6 +18,7 @@ data OracleRedeemer = Update | Use
 
 PlutusTx.unstableMakeIsData ''OracleRedeemer
 ```
+
 ---
 #### in [[pp00-l06-Core-1]]
-#plutus-pioneer  #lecture06 
+#plutus-pioneer  #lecture06 #core 

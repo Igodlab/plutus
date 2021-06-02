@@ -1,0 +1,33 @@
+
+#### id: [[{{title}}]]
+## Contract: [`*.hs`](https://github.com/input-output-hk/plutus-pioneer-program/blob/main/code/week06/src/Week06/Oracle/*.hs)
+
+---
+This is the Plutus Pioneer first ever course. Thaught by [Dr. Lars Brünjes](https://github.com/brunjlar). Find this lecture on [Youtube](https://www.youtube.com/watch?v=wY7R-PJn66g&t=4865s) and [Github](https://github.com/input-output-hk/plutus-pioneer-program/tree/main/code/week06).
+---
+
+---
+This is the n-th contract of Lecture 6. Refer to [[pp00-l06]]
+---
+
+
+- ON-CHAIN part
+    - 1
+    - 2
+    - 3
+- OFF-CHAIN part
+    - 1
+    - 2
+    - 3
+
+## Full contract
+
+```haskell
+
+```
+
+---
+{{date}} {{time}}
+#### in [[pp0:w0-l06]]
+
+#swap #lecture06 
