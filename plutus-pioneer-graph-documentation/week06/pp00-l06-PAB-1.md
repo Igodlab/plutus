@@ -47,6 +47,6 @@ instance Pretty OracleContracts where
 
 ---
 2021-06-02 10:19
-#### in [[pp0:w0-l06]]
+#### in [[pp00-l06]]
 
 #swap #lecture06 #pab

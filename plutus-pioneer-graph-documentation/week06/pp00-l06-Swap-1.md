@@ -12,8 +12,12 @@ This is the second contract of Lecture 6. Refer to [[pp00-l06]]
 We create a Swap contract that allows actors to exchange tokens (ADA/USDT). The exchange rate is determined by the Oracle and it is a dynamic variable, this means that its value changes over time.
 
 - ON-CHAIN
-    - Set Ada variable from [[pp00-l06-Swap-1a]]
-    - Make swap validaror `mkSwapValidator` [[pp00-l06-Swap-1b]]
+    - Set Ada exchange variables [[pp00-l06-Swap-1a]]
+    - Make swap validator `mkSwapValidator` [[pp00-l06-Swap-1b]]
+    - Boiler plate actions for compilation [[pp00-l06-Swap-1c]]
+    - First contract for a seller to make an`offerSwap` [[pp00-l06-Swap-1d]]
+    - Helper function `findSwaps` [[pp00-l06-Swap-1e]] returns all the swaps that fulfill a predicate `p`
+    - Second contract`retrieveSwaps` allows the seller to swap a token back [[pp00-l06-Swap-1f]]
 
 - OFF-CHAIN
     - run ...

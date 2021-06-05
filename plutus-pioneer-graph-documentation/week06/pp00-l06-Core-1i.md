@@ -36,3 +36,9 @@ findOracle oracle = do
     f :: TxOutTx -> Bool
     f o = assetClassValueOf (txOutValue $ txOutTxOut o) (oracleAsset oracle) == 1
 ```
+
+---
+2021-05-26 9:54
+#### in [[pp00-l06]]
+
+#plutus-pioneer #core #lecture06 

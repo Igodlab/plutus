@@ -3,7 +3,7 @@
 
 Define Ada variables that will be used thoughout the contract:
 - We start by setting the exchange price `price`.
-- `lovrlaces` gets the ammount of Ada (`Value -> Integer`)
+- `lovelaces` gets the ammount of Ada (`Value -> Integer`)
 
 ```haskell
 {-# INLINABLE price #-}

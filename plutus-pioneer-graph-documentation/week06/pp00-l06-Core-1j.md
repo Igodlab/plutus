@@ -20,5 +20,6 @@ runOracle op = do
 ```
 
 ---
+2021-05-27 12:24
 #### in [[pp00-l06-Core-1j]]
 #plutus-pioneer #lecture06 #core 

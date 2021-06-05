@@ -28,6 +28,6 @@ This is the n-th contract of Lecture 6. Refer to [[pp00-l06]]
 
 ---
 {{date}} {{time}}
-#### in [[pp0:w0-l06]]
+#### in [[pp00-l06]]
 
 #swap #lecture06 

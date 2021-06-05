@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e31dccc813be4d44",
+        "id": "b79a5e0ab954d19b",
         "type": "leaf",
         "pinned": true,
         "state": {
@@ -17,23 +17,23 @@
         }
       },
       {
-        "id": "3a871c648c1289cd",
+        "id": "c6b0a0a16cd17312",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pp00-l06-Core-1.md",
-            "mode": "preview"
+            "file": "pp00-l06-Swap-1f.md",
+            "mode": "source"
           }
         }
       },
       {
-        "id": "744b134d37f94e7a",
+        "id": "e57d8c4fe1b05e93",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Templates/contract-1.md",
+            "file": "pp00-l06-Swap-1f1.md",
             "mode": "source"
           }
         }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pp00-l06-Core-1.md",
+                "file": "pp00-l06-Swap-1f1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,17 +110,17 @@
     "width": 205,
     "collapsed": true
   },
-  "active": "3a871c648c1289cd",
+  "active": "e57d8c4fe1b05e93",
   "lastOpenFiles": [
-    "pp00-l06-Core-1.md",
-    "Templates/contract-1.md",
-    "pp00-l06-Swap-1b1.md",
+    "pp00-l06-Swap-1f1.md",
+    "pp00-l06-Swap-1f.md",
+    "Templates/pp00-l07-Swap-1f.md",
+    "Untitled 2.md",
+    "pp00-l06-Swap-1e2.md",
     "pp00-l06-Swap-1.md",
-    "pp00-l06-Swap-1b.md",
-    "pp00-l06-PAB-1.md",
-    "PAB.md",
-    "pp00-l06.md",
-    "Untitled.md",
-    "Templates/Untitled.md"
+    "pp00-l06-Swap-1e.md",
+    "Templates/template-week06.md",
+    "pp00-l06-Swap-1e1.md",
+    "pp00-l06-Swap-1b1.md"
   ]
 }
