@@ -5,7 +5,7 @@ The Oracle validator `mkOracleValidator` has to :
 - Check if the operator signed the transaction (as a hash) `(txSignedBy info $ oOperator oracle)` [[pp00-l06-Core-1e1]]
 - Check if the transaction carries Datum `validOutputDatum` [[pp00-l06-Core-1e2]]
 - Always verifiy that Tx inputs and outputs contain the NFT [[pp00-l06-Core-1e3]]
-- In addition, allow the Oracle prvovider to collect fees [[pp00-l06-Core-1e4]]
+- In addition, allow the Oracle provider to collect fees [[pp00-l06-Core-1e4]]
 
 
 ```haskell

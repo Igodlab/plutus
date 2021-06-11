@@ -4,7 +4,7 @@ Retrieving all UTXOs from the triplet:
 
 (Oracle's reference address, UTXO itself, Datum) = `(TxOutRef, TxOutTx, PubKeyHash)`
 
--   concatenate things...
+-   `tx`, `mconcat` Monoid 
 
 
 ```haskell

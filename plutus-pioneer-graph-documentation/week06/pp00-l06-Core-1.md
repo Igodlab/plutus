@@ -11,23 +11,23 @@ This is the first contract of Lecture 6. Refer to [[pp00-l06]]
 
 
 - ON-CHAIN part
-    - custom data type for `Oracle` [[pp00-l06-Core-1a]]
-    - create the token name for the Oracle `oraceTokenName` [[pp00-l06-Core-1b]]
-    - identify Oracle NFT Asset Class `oracleAsset` [[pp00-l06-Core-1c]]
-    - get data from Datum `oracleValue` [[pp00-l06-Core-1d]]
+    - Custom data type for `Oracle` [[pp00-l06-Core-1a]]
+    - Create the token name for the Oracle `oracleTokenName` [[pp00-l06-Core-1b]]
+    - Identify Oracle NFT Asset Class `oracleAsset` [[pp00-l06-Core-1c]]
+    - Get data from Datum `oracleValue` [[pp00-l06-Core-1d]]
     - Oracle validator `mkOracleValidator` [[pp00-l06-Core-1e]], has two objectives:
         - 1) to check if the operator signed the transaction (as a hash) `(txSignedBy info $ oOperator oracle)`
         - 2) to check if the transaction carries Datum `validOutputDatum`
-    - Boiler-plate for on-chain [[pp0-l06-Core-1f]]:
+    - Boiler-plate for on-chain [[pp00-l06-Core-1f]]:
 		- Template Haskell `oracleInst`
 		- Construct Ledger-Adress `oracleAddress`
         
 - OFF-CHAIN part
-    - custom data-type for `OracleParams` [[pp00-l06-Core-1g]]
-    - Start Oracle [[pp00-l06-Core-1h]], for this we need to:
+    - Custom data-type for `OracleParams` [[pp00-l06-Core-1g]]
+    - `startOracle` [[pp00-l06-Core-1h]], for this we need to:
         - Mint the unique NFT
         - Create oracle data to comunicate it to the on-chain world
-    - Update the oracle's datum with new current information `updateOracle`, this handles two cases [[pp00-l06-Core-1i]]
+    - `updateOracle`'s datum with new current information, this handles two cases [[pp00-l06-Core-1i]]
         - Simply update an existing oracle or
         - Create a brand new oracle 
     - Run the oracle `runOracle`[[pp00-l06-Core-1j]]

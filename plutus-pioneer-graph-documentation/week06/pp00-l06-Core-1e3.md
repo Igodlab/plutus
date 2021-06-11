@@ -7,7 +7,6 @@ Check that the Tx inputs and outputs(`inputHasToken` & `outputHasToken`, respect
 where
     .
     .
-    .
     ownInput :: TxOut
     ownInput = case findOwnInput ctx of
         Nothing -> traceError "oracle input missing"
@@ -23,7 +22,6 @@ where
 
     outputHasToken :: Bool
     outputHasToken = assetClassValueOf (txOutValue ownOutput) (oracleAsset oracle) == 1
-    .
     .
     .
 ```

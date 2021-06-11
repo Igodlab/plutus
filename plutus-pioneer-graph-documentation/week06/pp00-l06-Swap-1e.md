@@ -2,7 +2,7 @@
 ---
 `findSwaps` is a helper function that finds all swaps that meet certain **predicate** `p`
 -   `utxoAt` gives all the UTXOs sitting at the swap address as a `UtxoMap` 
--   we make use of `mapMaybe` to get all elements of the list-mapped swap addresses by a function `g` (more on `mapMaybe` [[pp00-l06-Swap-1e1]])
+-   we make use of `mapMaybe` to get all elements of the list-mapped swap addresses by a function `g` (more on `mapMaybe` [[Data.Maybe-mapMaybe]])
 -   function `f` deserializes data into Datum (`PubKeyHash`), ifsuccesfull
 -   function `g` maps all the UTXOs into the same UTXOs+Datum (details on function `f` and `g`[[pp00-l06-Swap-1e2]])
 

@@ -7,7 +7,6 @@ Verifiy that fees (+tip if whished) are paid to the oracle provider, the Tx outp
 where
     .
     .
-    .
     feesPaid :: Bool
     feesPaid =
       let

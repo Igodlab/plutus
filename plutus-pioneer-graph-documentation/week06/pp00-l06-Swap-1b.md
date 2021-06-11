@@ -2,7 +2,7 @@
 ---
 
 We start by creating the `mkSwapValidator`.
-The inputs are 1) `Oracle`, which we custom-defined it in [`Core.hs`](https://github.com/input-output-hk/plutus-pioneer-program/blob/main/code/week06/src/Week06/Oracle/Core.hs). 3) Datum is the `PubKeyHash` of the seller. 4) The redemer is type unit `()`. 5) Just context for the script. For this function to run we either need to met one of the two conditions:
+The inputs are 1) `Oracle`, which we custom-defined it in [`Core.hs`](https://github.com/input-output-hk/plutus-pioneer-program/blob/main/code/week06/src/Week06/Oracle/Core.hs)[[pp00-l06-Core-1a]]. 3) Datum is the `PubKeyHash` of the seller. 4) The redemer is type unit `()`. 5) Just context for the script. For this function to run we either need to met one of the two conditions:
 - 1) Seller signing the transaction (`txSignedBy info pkh`)
 - 2) Or if the contract finds exactly two script inputs `hasTwoScripInputs` [[pp00-l06-Swap-1b1]] that match the conditions for the swap `sellerPaid` [[pp00-l06-Swap-1b2]].
 

@@ -6,10 +6,8 @@ Check whether the incoming Tx contains the Oracle's `PubKeyHash`
 ```haskell
 .
 .
-.
 case r of
     Update -> traceIfFalse "operator signature missing" (txSignedBy info $ oOperator oracle) &&
-    .
     .
     .
 ```

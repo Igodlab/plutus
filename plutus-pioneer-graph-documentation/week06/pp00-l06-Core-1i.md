@@ -1,9 +1,11 @@
 #### id [[pp00-l06-Core-1i]]
 ---
 
-`updateOracle` has to update the oracle's datum information [[pp00-l06-Core-1i1]] or create the oracle if it is new [[pp00-l06-Core-1i2]].
+`updateOracle` has to update the oracle's datum information or create the oracle if it is new. 
 
-The second input of our function `x :: Integer` is the new data. 
+-   We first need a helper function to `findOracle` [[pp00-l06-Core-1i1]] and bind it to the handle `m`
+-   If this fails, we create a new oracle
+-   If this succeeds we just update its datum with the function's second input:  `x :: Integer` (new data) 
 
 ```haskell
 updateOracle :: forall w s. HasBlockchainActions s => Oracle -> Integer -> Contract w s Text ()
@@ -39,6 +41,6 @@ findOracle oracle = do
 
 ---
 2021-05-26 9:54
-#### in [[pp00-l06]]
+#### in [[pp00-l06-Core-1]]
 
 #plutus-pioneer #core #lecture06 

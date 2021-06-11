@@ -1,7 +1,11 @@
 #### id [[pp00-l06-Core-1a]]
 --- 
 
-Create custom data-type `Oracle` & make it liftable. Also create custom `OracleRedeemer` to be able to tell a Tx whether to consume or update its **Datum**
+This oracle will be used to quote swap prices. As usual it contains an NFT as unique identifier. To mint its NFT we need a token-name and currency-symbol
+
+Here we create a custom data-type `Oracle` & make it liftable. Also create  `OracleRedeemer` to be able to tell a Tx whether to consume or update its **Datum**
+
+*Note.- here `oAsset :: !AssetClass` refers to the swap-token and not to the NFT* 
 
 ```haskell
 data Oracle = Oracle

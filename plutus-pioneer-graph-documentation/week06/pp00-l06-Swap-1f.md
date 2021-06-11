@@ -3,8 +3,8 @@
 `retrieveSwaps` makes possbile for the seller to change his mind, and retrieve his tokens. Takes the Oracle owner's public-key-hash as an input
 -   `pkh` takes the owner's public-key-hash
 -   Our hyperfunction `findSwaps`  [[pp00-l06-Swap-1e]] will get us all the UTXOs swaps, which is then reduced to the the swap of the original seller
--   If the previous step succeds we need to rerieve all UTXOs : (Oracle's reference address, UTXO itself, Datum) = `(TxOutRef, TxOutTx, PubKeyHash)`. This is done in `tx` (details [[pp00-l06-Swap-1f1]])
-
+-   If the previous step succeds we need to rerieve the triplet : (Oracle's reference address, UTXO itself, Datum) = `(TxOutRef, TxOutTx, PubKeyHash)`. This is done in `tx` (details [[pp00-l06-Swap-1f1]])
+-   submit Tx, wait for confirmation and set log messages stating how many swaps were retrieved
 
 
 ```haskell

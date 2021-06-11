@@ -15,12 +15,13 @@ We create a Swap contract that allows actors to exchange tokens (ADA/USDT). The 
     - Set Ada exchange variables [[pp00-l06-Swap-1a]]
     - Make swap validator `mkSwapValidator` [[pp00-l06-Swap-1b]]
     - Boiler plate actions for compilation [[pp00-l06-Swap-1c]]
+
+-   OFF-CHAIN
     - First contract for a seller to make an`offerSwap` [[pp00-l06-Swap-1d]]
     - Helper function `findSwaps` [[pp00-l06-Swap-1e]] returns all the swaps that fulfill a predicate `p`
     - Second contract`retrieveSwaps` allows the seller to swap a token back [[pp00-l06-Swap-1f]]
-
-- OFF-CHAIN
-    - run ...
+    - `useSwap` [[pp00-l06-Swap-1g]] executes the swap of tokens
+    - `SwapScheema` for display in the Playground/Emulator + endpoints (`offer`, `retrieve`, `use`, `funds`)[[pp00-l06-Swap-1h]]
 
 
 

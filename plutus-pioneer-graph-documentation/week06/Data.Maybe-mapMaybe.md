@@ -1,4 +1,4 @@
-#### id [[pp00-l06-Swap-1e1]]
+#### id [[Data.Maybe-mapMaybe]]
 ---
 `mapMaybe` is a function that maps a function to every element on the input list and returns only the `Just` values. Try it on the repl:
 
@@ -22,4 +22,4 @@ repl$ mapMaybe f $ take 20 [-5..]
 2021-06-03 16:49
 #### in [[pp00-l06-Swap-1e]]
 
-#plutus-pioneer #lecture06 #swap 
+#Data-Maybe #mapMaybe
